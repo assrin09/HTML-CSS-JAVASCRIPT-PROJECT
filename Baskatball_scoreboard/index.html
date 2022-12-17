@@ -1,0 +1,43 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 >Scoreboard</h1>
+        <div class="container">
+            
+            <div>
+                <h3>HOME</h3>
+                <h4 id="homeScore">0</h4>
+                <button id="homeCountbtn-1" onclick="homeCount1()">+1</button>
+                <button id="homeCountbtn-2" onclick="homeCount2()">+2</button>
+                <button onclick="homeCount3()">+3</button>
+                
+                     <p class="foul" >FOULS:  </p>
+                 <p class="foulCount" id="foulCount1" >0</p>
+                 <button id="foul1btn-1" onclick="foul1Count1()">+1</button>
+                <button  id="foul2btn-2" onclick="foul1Count2()">+2</button>
+
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <h4 id="guestScore">0</h4>
+                <button onclick="guestCount1()">+1</button>
+                <button onclick="guestCount2()">+2</button>
+                <button onclick="guestCount3()">+3</button>
+                
+                <p class="foul" >FOULS:  </p>
+                 <p class="foulCount" id="foulCount2">0</p>
+                <button id="foul2Countbtn-1" onclick="foul2Count1()">+1</button>
+                <button id="foul2Countbtn-2" onclick="foul2Count2()">+2</button>  
+                
+            </div>
+            
+        </div>
+        <div class="start">
+            <button type="reset" id="restart" onclick="restart()">START NEW GAME </button>
+        </div>
+
+                <script src="index.js"></script>
+    </body>
+</html>
